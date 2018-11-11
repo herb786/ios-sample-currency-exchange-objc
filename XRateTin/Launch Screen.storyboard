@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Xt-ls-r5N">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="OTg-g7-pLh">
+            <objects>
+                <viewController id="4Xt-ls-r5N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vgk-DA-U8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="WMI-Ic-nXX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YH7-nR-32L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-YE-B9x">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2017 hacaller. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd" userLabel="Copyright © 2017 hacaller. All rights reserved.">
+                                        <rect key="frame" x="0.0" y="626.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.68593353430000004" green="0.68447314800000003" blue="0.48788205000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="obG-Y5-kRd" secondAttribute="trailing" id="4R9-He-CA0"/>
+                                    <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="fzo-f3-uQJ"/>
+                                    <constraint firstItem="obG-Y5-kRd" firstAttribute="centerX" secondItem="mnH-YE-B9x" secondAttribute="centerX" id="idD-GS-GY3"/>
+                                    <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="mnH-YE-B9x" secondAttribute="leading" id="kZ2-fg-0ab"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E9P-sY-0vO">
+                                <rect key="frame" x="-68.5" y="167" width="512" height="333.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="k85-3U-xzp">
+                                        <rect key="frame" x="0.0" y="0.0" width="512" height="222"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XRateTin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-Yf-Prs">
+                                        <rect key="frame" x="181.5" y="222" width="149.5" height="111.5"/>
+                                        <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="32"/>
+                                        <color key="textColor" red="0.38022340310000002" green="0.18807603070000001" blue="0.24598747260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Lh-Yf-Prs" firstAttribute="height" secondItem="k85-3U-xzp" secondAttribute="height" multiplier="0.5" id="UVc-Bw-HKk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68593353430000004" green="0.68447314800000003" blue="0.48788205000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E9P-sY-0vO" firstAttribute="centerY" secondItem="YH7-nR-32L" secondAttribute="centerY" id="7ki-bS-zrO"/>
+                            <constraint firstItem="E9P-sY-0vO" firstAttribute="centerX" secondItem="YH7-nR-32L" secondAttribute="centerX" id="8tV-cj-7Zn"/>
+                            <constraint firstItem="E9P-sY-0vO" firstAttribute="height" secondItem="mnH-YE-B9x" secondAttribute="height" multiplier="0.5" id="Cxk-Cc-QCM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mnH-YE-B9x" secondAttribute="trailing" id="MzG-dl-0cw"/>
+                            <constraint firstItem="mnH-YE-B9x" firstAttribute="top" secondItem="YH7-nR-32L" secondAttribute="topMargin" id="Nl0-gI-lm5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mnH-YE-B9x" secondAttribute="bottom" id="gD1-1D-ywH"/>
+                            <constraint firstItem="mnH-YE-B9x" firstAttribute="leading" secondItem="YH7-nR-32L" secondAttribute="leadingMargin" id="oD6-tc-BBM"/>
+                            <constraint firstItem="mnH-YE-B9x" firstAttribute="centerY" secondItem="YH7-nR-32L" secondAttribute="centerY" id="qR0-bK-Smd"/>
+                            <constraint firstItem="mnH-YE-B9x" firstAttribute="centerX" secondItem="YH7-nR-32L" secondAttribute="centerX" id="w3S-1z-fPn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPt-wO-gPe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650.39999999999998" y="684.10794602698661"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+    </resources>
+</document>
